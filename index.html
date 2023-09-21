@@ -11,11 +11,6 @@
             font-family: Arial, sans-serif;
             margin: 100px;
         }
-        #segredo {
-            display: none;
-            font-size: 24px;
-            color: #FF0000; /* Cor do texto do segredo */
-        }
         p {
             text-align: justify;
             line-height: 1.6; /* Espaçamento entre linhas aumentado para legibilidade */
@@ -44,7 +39,6 @@
 
         <p>E para os amantes de games que chegaram até esta parte do texto, tenho um segredo especial que só pode ser acessado por aqueles que verdadeiramente apreciam desafios e têm paixão por videogames! 😄🎮</p>
     </div>
-    <div id="segredo">Eu sei fazer um churrasco muito bom e também sou muito bom em massas.</div>
     <!-- Adicione os scripts do Bootstrap CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -60,8 +54,7 @@
             if (event.key === konamiCode[konamiCodePosition]) {
                 konamiCodePosition++;
                 if (konamiCodePosition === konamiCode.length) {
-                    // Se o Konami Code for bem-sucedido, exiba o elemento oculto
-                    document.getElementById("segredo").style.display = "block";
+                    alert("Eu sei fazer um churrasco muito bom e também sou muito bom em massas.");
                     konamiCodePosition = 0;
                 }
             } else {
